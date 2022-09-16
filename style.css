@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #2f0057;
+    --secundary-color: #a72484;
+}
+body{
+    background-color:var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.col1{
+    width: 450px;
+    height: 200px;
+    background-color: lightblue;
+    border-top-right-radius: 150px;
+    margin: 10px;
+}
+.col2{
+    width: 600px;
+    height: 150px;
+    background-color: gray;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 68px;
+}
+.image{
+    width: 100px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.icons{
+    display: flex;
+    justify-content: start;
+    margin: 20px;
+}
+.icons i{
+    font-size: 30px;
+    margin: 10px;
+    color: white;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--secundary-color);
+    margin: 10px;
+    cursor: pointer;
+}
+.col2 .row1{
+    width: 92%;
+    margin: 20px;
+    top: 50px;
+    position: relative;
+}
+.Progress{
+    background-color:white;
+    border-radius: 30px;
+    width: 100%;
+}
+meter{
+    width: 100%;
+    height: 20px;
+    border-radius: 30px;
+}
+.mega{
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    position: absolute;
+    top: 38%;
+    left: 80%;
+  z-index: 1;
+  background: white;
+  padding: 12px 20px;
+  border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+h5{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+small{
+    font-size: 15px;
+    font-weight: 500;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 20px solid white;
+    position: absolute;
+    top: 40%;
+    left: 84%;
+}
+/*............ media query------ */
+@media screen and (max-width: 1200px){
+    .row{
+        width: 100%;
+    }
+    .col1{
+        width: 100%;
+        height: 200px;
+    }
+    .col2{
+        width: 100%;
+        height: 150px;
+    }
+    .image{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .icons{
+        margin: 0px;
+    }
+    .col2 .row1{
+        width: 100%;
+    }
+    .text{
+      z-index: 1;
+      background: white;
+      padding: 12px 20px;
+    }
+    .triangle{
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 30px solid transparent;
+        border-right: 20px solid white;
+        position: absolute;
+}
+    
+}
